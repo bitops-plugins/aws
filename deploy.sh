@@ -17,7 +17,7 @@ if [ -z "$AWS_DEFAULT_REGION" ]; then
 fi
 
 
-/bin/mkdir -p /root/.aws
+mkdir -p /root/.aws
 cat <<EOF > /root/.aws/credentials
 [default]
 aws_access_key_id = "${AWS_ACCESS_KEY_ID}"
