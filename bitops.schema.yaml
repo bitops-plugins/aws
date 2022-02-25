@@ -1,0 +1,10 @@
+aws:
+  type: object
+  properties:
+    cli:
+      type: object
+      properties:
+        aws-region:
+          type: string
+          parameter: us-east-1
+          export_env: BITOPS_AWS_DEFAULT_REGION
