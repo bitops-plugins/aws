@@ -6,5 +6,5 @@ aws:
       properties:
         aws-region:
           type: string
-          parameter: us-east-1
+          default: us-east-1
           export_env: BITOPS_AWS_DEFAULT_REGION
