@@ -1,0 +1,29 @@
+aws:
+  type: object
+  properties:
+    
+    project:
+      type: object
+      properties:
+        
+        install:
+          type: object
+          properties:
+            language:
+              type: string
+        
+        deployment:
+          type: object
+          properties:
+            language:
+              type: string
+
+    
+    cli:
+      type: object
+      properties:
+        
+        aws-region:
+          type: string
+          default: us-east-1
+          export_env: BITOPS_AWS_DEFAULT_REGION
