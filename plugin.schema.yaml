@@ -2,28 +2,40 @@ aws:
   type: object
   properties:
     
-    project:
-      type: object
-      properties:
-        
-        install:
-          type: object
-          properties:
-            language:
-              type: string
-        
-        deployment:
-          type: object
-          properties:
-            language:
-              type: string
-
-    
     cli:
       type: object
       properties:
-        
-        aws-region:
+        validate-cfn:
+          type: boolean
+        cfn-stack-action:
           type: string
-          default: us-east-1
-          export_env: BITOPS_AWS_DEFAULT_REGION
+        version:
+          type: string
+    
+    options:
+      type: object
+      properties:
+        cfn-stack-name:
+          type: string
+        cfn-s3-bucket:
+          type: string
+        cfn-s3-prefix:
+          type: string
+        cfn-create-bucket:
+          type: string
+
+        cfn-files:
+          type: object
+          properties:            
+            template-file:
+              type: string
+            
+            parameters:
+              type: object
+              properties:
+                enabled: 
+                  type: boolean
+                emplate-param-file:
+                  type: string
+            
+
