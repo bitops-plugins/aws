@@ -35,7 +35,7 @@ aws:
               properties:
                 enabled: 
                   type: boolean
-                emplate-param-file:
+                template-param-file:
                   type: string
             
 
