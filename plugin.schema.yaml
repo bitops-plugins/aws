@@ -7,6 +7,12 @@ aws:
       properties:
         validate-cfn:
           type: boolean
+          default: false
+          export_env: CFN_VALIDATE_CFN
+          enabled: true
+
+
+
         cfn-stack-action:
           type: string
         version:
