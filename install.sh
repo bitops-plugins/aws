@@ -50,3 +50,5 @@ echo "Installing AWSCLI"
 
 install_aws_cli
 install_aws_iam_authenticator
+
+echo "Installed AWSCLI"
