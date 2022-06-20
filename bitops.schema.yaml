@@ -20,11 +20,11 @@ aws:
       properties:
         s3-bucket:
           type: string
-          export_env: AWS-S3-BUCKET
+          export_env: AWS_S3_BUCKET
 
         s3-key:
           type: string
-          export_env: AWS-S3-BUCKET-KEY
+          export_env: AWS_S3_BUCKET_KEY
 
         cfn-stack-name:
           type: string        
