@@ -47,4 +47,9 @@ if [[ -z "${option}" ]]; then
   echo $usage
 fi
 
-
+if [[ "${option}" == "create-s3" ]]; then
+  printenv | grep AWS
+  aws s3api create-bucket
+    --bucket my-bucket
+    --region us-east-1
+fi

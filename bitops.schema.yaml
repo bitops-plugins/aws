@@ -10,8 +10,7 @@ aws:
           default: false
           export_env: CFN_VALIDATE_CFN
           enabled: true
-
-        cfn-stack-action:
+        stack-action:
           type: string
         version:
           type: string
@@ -19,12 +18,16 @@ aws:
     options:
       type: object
       properties:
+        s3-bucket:
+          type: string
+          export_env: AWS-S3-BUCKET
+
+        s3-key:
+          type: string
+          export_env: AWS-S3-BUCKET-KEY
+
         cfn-stack-name:
-          type: string
-        cfn-s3-bucket:
-          type: string
-        cfn-s3-prefix:
-          type: string
+          type: string        
         cfn-create-bucket:
           type: string
 
