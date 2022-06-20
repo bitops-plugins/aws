@@ -32,3 +32,19 @@ EOF
 
 echo "aws sts get-caller-identity"
 aws sts get-caller-identity
+
+# CLI ARGUEMENTS
+option=$1
+usage="\
+  BitOps AWS CLI Plugin Usage Information \
+  Usage:  \
+    deploy.sh <option>  \
+  Options:  \
+    create-s3 \
+"
+
+if [[ -z "${option}" ]]; then
+  echo $usage
+fi
+
+
