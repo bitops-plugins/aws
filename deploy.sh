@@ -49,7 +49,5 @@ fi
 
 if [[ "${option}" == "create-s3" ]]; then
   printenv | grep AWS
-  aws s3api create-bucket
-    --bucket my-bucket
-    --region us-east-1
+  aws s3api create-bucket --bucket $AWS_S3_BUCKET --region $AWS_DEFAULT_REGION
 fi
