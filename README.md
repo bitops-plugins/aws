@@ -31,6 +31,9 @@ bitops:
 
 ```
 
+## Installed Libraries
+``awscliv2`` and ``aws-iam-authenticator`` libraries gets installed as part of aws plugin installation of BitOps
+
 ## Plugin Deployment
 ### CLI Configuration
 
