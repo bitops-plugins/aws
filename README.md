@@ -4,7 +4,7 @@
 This is one of the required plugins that sets credentials for AWS to run deployments using BitOps.
 
 
-## Plugin Installation
+## Installation
 
 This plugin gets installed through ```bitops.config.yaml```.
 
@@ -34,7 +34,9 @@ bitops:
 ## Installed Libraries
 ``awscliv2`` and ``aws-iam-authenticator`` libraries gets installed as part of aws plugin installation of BitOps
 
-## Plugin Deployment
+## Deployment
+
+
 ### CLI Configuration
 
 ```AWS_ACCESS_KEY_ID```, ```AWS_SECRET_ACCESS_KEY``` and ```AWS_DEFAULT_REGION``` are the mandatory configs that are required to use AWS plugin for BitOps.
